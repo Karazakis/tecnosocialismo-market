@@ -83,6 +83,10 @@ export type Listing = {
   unit: string;
   condition: string;
   vegan: boolean;
+  productType: "bene" | "spesa" | "piatto-pronto";
+  sellerType: "persona" | "negozio" | "cooperativa" | "ristorazione";
+  storeName: string;
+  stock: number;
   mode: ListingMode;
   marketPrice: number;
   askingPrice?: number;
@@ -90,7 +94,44 @@ export type Listing = {
   city: string;
   pickup: boolean;
   internalDelivery: boolean;
+  expressDelivery: boolean;
+  shippingAvailable: boolean;
+  deliveryFee: number;
+  freeDeliveryThreshold?: number;
+  preparationMinutes?: number;
+  shippingDaysMin?: number;
+  shippingDaysMax?: number;
+  ingredients?: string;
+  allergens?: string;
   status: ListingStatus;
+  createdAt: string;
+};
+
+export type OrderLine = {
+  listingId: string;
+  title: string;
+  quantity: number;
+  unit: string;
+  unitPrice: number;
+  marketUnitPrice: number;
+};
+
+export type MarketOrder = {
+  id: string;
+  buyerId: string;
+  buyerName: string;
+  sellerId: string;
+  sellerName: string;
+  storeName: string;
+  lines: OrderLine[];
+  subtotal: number;
+  marketReferenceTotal: number;
+  deliveryFee: number;
+  total: number;
+  fulfillment: "ritiro" | "consegna-interna" | "express" | "spedizione";
+  address: string;
+  deliverySlot: string;
+  status: "richiesto" | "confermato" | "in-preparazione" | "in-consegna" | "consegnato" | "annullato";
   createdAt: string;
 };
 
@@ -116,6 +157,7 @@ export type MarketDashboard = {
   supply: SupplyEntry[];
   listings: Listing[];
   requests: MarketRequest[];
+  orders: MarketOrder[];
 };
 
 export function safeText(value: unknown, max = 240) {

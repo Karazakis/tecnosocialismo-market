@@ -31,6 +31,7 @@ const emptyDashboard: MarketDashboard = {
   supply: [],
   listings: [],
   requests: [],
+  orders: [],
 };
 
 const suiteLinks = [
