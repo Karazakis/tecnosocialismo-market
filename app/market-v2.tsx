@@ -18,15 +18,17 @@ const emptyDashboard: MarketDashboard = {
 };
 
 const suiteLinks = [
-  ["Home", "https://tecnosocialismo.com", "TS"], ["Iskra", "https://iskra.tecnosocialismo.com", "IK"],
-  ["Rizoma", "https://rizoma.tecnosocialismo.com", "RZ"], ["Cloud", "https://cloud.tecnosocialismo.com", "CL"],
+  ["Home", "https://tecnosocialismo.com", "TS"], ["Rizoma", "https://rizoma.tecnosocialismo.com", "RZ"],
+  ["Iskra", "https://iskra.tecnosocialismo.com", "IK"], ["Cloud", "https://cloud.tecnosocialismo.com", "CL"],
   ["Mail", "https://mail.tecnosocialismo.com", "ML"], ["Video", "https://video.tecnosocialismo.com", "VD"],
-  ["Social", "https://social.tecnosocialismo.com", "SO"], ["Sport", "https://sport.tecnosocialismo.com", "FT"],
+  ["Musica", "https://musica.tecnosocialismo.com", "MU"], ["Social", "https://social.tecnosocialismo.com", "SO"],
+  ["Messaggi", "https://messaggi.tecnosocialismo.com", "MS"], ["Sport", "https://sport.tecnosocialismo.com", "FT"],
+  ["Market", "https://market.tecnosocialismo.com", "MK"],
   ["Lavoro", "https://lavoro.tecnosocialismo.com", "LW"], ["Azienda", "https://azienda.tecnosocialismo.com", "AZ"],
   ["Servizi", "https://servizi.tecnosocialismo.com", "SV"],
   ["Biblioteca", "https://biblioteca.tecnosocialismo.com", "BI"],
-  ["Messaggi", "https://messaggi.tecnosocialismo.com", "MS"],
   ["Militant", "https://militant.tecnosocialismo.com", "MT"],
+  ["Account", "https://login.tecnosocialismo.com", "AC"],
 ] as const;
 
 type CommercePanel = "listing" | "request" | "cart" | "orders" | null;
