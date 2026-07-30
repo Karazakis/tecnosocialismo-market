@@ -36,15 +36,26 @@ const emptyDashboard: MarketDashboard = {
 
 const suiteLinks = [
   { name: "Home", href: "https://tecnosocialismo.com", mark: "TS" },
-  { name: "Iskra", href: "https://iskra.tecnosocialismo.com", mark: "IK" },
   { name: "Rizoma", href: "https://rizoma.tecnosocialismo.com", mark: "RZ" },
+  { name: "Iskra", href: "https://iskra.tecnosocialismo.com", mark: "IK" },
   { name: "Cloud", href: "https://cloud.tecnosocialismo.com", mark: "CL" },
   { name: "Mail", href: "https://mail.tecnosocialismo.com", mark: "ML" },
   { name: "Video", href: "https://video.tecnosocialismo.com", mark: "VD" },
+  { name: "Musica", href: "https://musica.tecnosocialismo.com", mark: "MU" },
   { name: "Social", href: "https://social.tecnosocialismo.com", mark: "SO" },
-  { name: "Sport", href: "https://sport.tecnosocialismo.com", mark: "FT" },
   { name: "Messaggi", href: "https://messaggi.tecnosocialismo.com", mark: "MS" },
+  { name: "Sport", href: "https://sport.tecnosocialismo.com", mark: "FT" },
+  { name: "Market", href: "https://market.tecnosocialismo.com", mark: "MK" },
+  { name: "Lavoro", href: "https://lavoro.tecnosocialismo.com", mark: "LW" },
+  { name: "Azienda", href: "https://azienda.tecnosocialismo.com", mark: "AZ" },
+  { name: "Servizi", href: "https://servizi.tecnosocialismo.com", mark: "SV" },
+  { name: "Salute", href: "https://salute.tecnosocialismo.com", mark: "SA" },
+  { name: "Educazione", href: "https://educazione.tecnosocialismo.com", mark: "ED" },
+  { name: "Legge", href: "https://legge.tecnosocialismo.com", mark: "LE" },
+  { name: "Burocrazia", href: "https://burocrazia.tecnosocialismo.com", mark: "BU" },
+  { name: "Biblioteca", href: "https://biblioteca.tecnosocialismo.com", mark: "BI" },
   { name: "Militant", href: "https://militant.tecnosocialismo.com", mark: "MT" },
+  { name: "Account", href: "https://login.tecnosocialismo.com", mark: "AC" },
 ];
 
 type Modal = "profile" | "listing" | "request" | null;
