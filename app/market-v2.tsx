@@ -30,6 +30,7 @@ const suiteLinks = [
   ["Educazione", "https://educazione.tecnosocialismo.com", "ED"],
   ["Legge", "https://legge.tecnosocialismo.com", "LE"],
   ["Burocrazia", "https://burocrazia.tecnosocialismo.com", "BU"],
+  ["Propaganda", "https://propaganda.tecnosocialismo.com", "PR"],
   ["Biblioteca", "https://biblioteca.tecnosocialismo.com", "BI"],
   ["Militant", "https://militant.tecnosocialismo.com", "MT"],
   ["Account", "https://login.tecnosocialismo.com", "AC"],
